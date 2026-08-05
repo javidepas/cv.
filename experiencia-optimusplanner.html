@@ -46,6 +46,12 @@
   }
   .site-card .label{ font-size:.8rem; color:var(--muted); text-transform:uppercase; letter-spacing:.06em; }
   .site-card .name{ font-family:'Oswald',sans-serif; font-size:1.2rem; color:var(--navy); }
+  .media{ border-radius:10px; overflow:hidden; border:1px solid var(--line); background:#fff; }
+  .media img{ width:100%; display:block; }
+  .media .cap{
+    padding:.6rem .9rem; font-family:'IBM Plex Mono',monospace; font-size:.76rem;
+    color:var(--muted); border-top:1px solid var(--line); text-transform:uppercase; letter-spacing:.04em;
+  }
   .btn{
     font-family:'IBM Plex Mono',monospace; font-size:.85rem; text-decoration:none;
     background:var(--amber); color:var(--navy); padding:.6rem 1.1rem; border-radius:8px;
@@ -54,6 +60,7 @@
   .btn:hover{ background:var(--amber-dark); color:#fff; }
   footer{ background:var(--navy); color:#C9D3DB; padding:2rem 6vw; text-align:center; font-size:.85rem; }
   footer a{ color:var(--amber); text-decoration:none; }
+
 </style>
 </head>
 <body>
@@ -62,34 +69,43 @@
   <a class="back" href="index.html">← Volver al CV</a>
   <div class="eyebrow">Proyecto propio · Software</div>
   <h1>OptimusPlanner</h1>
-  <div class="meta">ERP propio, actualizable y editable (tipo SAP)</div>
+  <div class="meta">ERP modular, desarrollado con IA y adaptable a cualquier sector</div>
   <span class="leg-tag">Proyecto en desarrollo</span>
 </header>
 
 <main>
   <p>
-    OptimusPlanner nace de la necesidad de contar con una herramienta de gestión propia, adaptable a distintas
-    áreas de un negocio, en lugar de depender de soluciones cerradas de terceros. Es la aplicación directa de la
-    formación técnica de Javier (Python, SQL, Django) a un caso de uso real de gestión empresarial.
+    OptimusPlanner nace de la necesidad de contar con una herramienta de gestión propia, en lugar de depender de
+    soluciones cerradas de terceros. Es un ERP compuesto por distintos módulos que se desarrollan a petición de
+    cada cliente según sus necesidades concretas, lo que permite adaptarlo a prácticamente cualquier sector de
+    actividad. Es la aplicación directa de la formación técnica de Javier (Python, SQL, Django e inteligencia
+    artificial) a un caso de uso real de gestión empresarial.
   </p>
+
+  <div class="media" style="margin:1.6rem 0 2rem;">
+    <img src="optimusplanner-dashboard.jpg" alt="Panel de control de OptimusPlanner: módulo de logística, KPIs, gráficos de actividad y asistente de IA">
+    <div class="cap">Panel de logística de OptimusPlanner, con KPIs, actividad y asistente de IA</div>
+  </div>
 
   <h2>Labores realizadas</h2>
   <ul>
-    <li>Diseño y desarrollo de un ERP propio, actualizable y editable, inspirado en el funcionamiento de sistemas como SAP pero adaptado a negocios más pequeños.</li>
-    <li>Definición de los módulos de gestión: logística, ventas y RRHH.</li>
+    <li>Diseño y desarrollo de un ERP modular, con módulos construidos a petición del cliente en función de sus necesidades.</li>
+    <li>Uso de inteligencia artificial en el desarrollo de la herramienta y de sus distintos módulos.</li>
+    <li>Definición de módulos de gestión adaptables a distintos sectores: logística, ventas y RRHH, entre otros.</li>
     <li>Desarrollo de la arquitectura modular con Python, SQL y Django.</li>
   </ul>
 
   <h2>Conocimientos que me ha aportado el proyecto</h2>
   <ul>
-    <li>Diseño de arquitecturas de software escalables y modulares para gestión empresarial.</li>
+    <li>Diseño de arquitecturas de software escalables y modulares, adaptables a distintos sectores de negocio.</li>
+    <li>Aplicación de inteligencia artificial al desarrollo de software de gestión.</li>
     <li>Traducción de necesidades operativas reales (logística, ventas, RRHH) a requisitos técnicos de software.</li>
     <li>Visión de extremo a extremo del ciclo de vida de una herramienta: diseño, desarrollo, mantenimiento y actualización.</li>
   </ul>
 
   <h2>Proyectos realizados</h2>
   <ul>
-    <li>Desarrollo del ERP OptimusPlanner, con módulos de logística, ventas y RRHH, disponible en optimusplanner.com.</li>
+    <li>Desarrollo de OptimusPlanner, ERP modular y adaptable a distintos sectores, con módulos de logística, ventas y RRHH, disponible en optimusplanner.com.</li>
   </ul>
 
   <div class="site-card">

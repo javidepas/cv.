@@ -46,6 +46,12 @@
   }
   .site-card .label{ font-size:.8rem; color:var(--muted); text-transform:uppercase; letter-spacing:.06em; }
   .site-card .name{ font-family:'Oswald',sans-serif; font-size:1.2rem; color:var(--navy); }
+  .media{ border-radius:10px; overflow:hidden; border:1px solid var(--line); background:#fff; }
+  .media img{ width:100%; display:block; }
+  .media .cap{
+    padding:.6rem .9rem; font-family:'IBM Plex Mono',monospace; font-size:.76rem;
+    color:var(--muted); border-top:1px solid var(--line); text-transform:uppercase; letter-spacing:.04em;
+  }
   .substop-label{
     font-family:'IBM Plex Mono',monospace; font-size:.72rem; text-transform:uppercase;
     letter-spacing:.08em; color:var(--amber-dark); margin:1rem 0 .3rem; font-weight:600;
@@ -58,6 +64,7 @@
   .btn:hover{ background:var(--amber-dark); color:#fff; }
   footer{ background:var(--navy); color:#C9D3DB; padding:2rem 6vw; text-align:center; font-size:.85rem; }
   footer a{ color:var(--amber); text-decoration:none; }
+
 </style>
 </head>
 <body>
@@ -91,16 +98,24 @@
 
   <h2>Proyectos realizados en el puesto</h2>
   <ul>
-    <li>Diseño y creación de un sistema de almacenamiento y salida rápida de producto textil para las secciones de Textil y Bebé, agilizando la reposición y reduciendo los tiempos de localización de producto en el almacén.</li>
+    <li>Diseño íntegro de un sistema de picking por ubicaciones para las secciones de Textil y Bebé, desarrollado en su totalidad por Javier: etiquetado físico de cada estantería del almacén con un código de 2 letras y un número, combinado con un archivo Excel de localizaciones actualizado constantemente desde tienda.</li>
+    <li>Cambio del método de solicitud de mercancía: de pedir prendas por código interno, talla y color, a ubicar y solicitar directamente por su código de estantería desde tienda a almacén.</li>
   </ul>
+
+  <div class="media" style="margin:1.6rem 0 2rem;">
+    <img src="sistema-picking-hipercor.jpg" alt="Esquema del sistema de ordenación y picking por códigos diseñado en Hipercor">
+    <div class="cap">Sistema de ordenación y picking por códigos, diseñado íntegramente por Javier</div>
+  </div>
 
   <h2>Contexto del puesto</h2>
   <p>
     Las secciones de Textil y Bebé manejan un volumen elevado de referencias con alta rotación estacional, lo que
-    hacía especialmente crítico encontrar el producto con rapidez durante los picos de venta. El sistema de
-    almacenamiento diseñado por Javier permitió acortar el tiempo entre la llegada de mercancía al almacén y su
-    disponibilidad en tienda, una primera experiencia práctica en optimización de flujos que después aplicaría a
-    mayor escala en logística de distribución.
+    hacía especialmente crítico encontrar el producto con rapidez durante los picos de venta. Antes de este
+    sistema, localizar una prenda en el almacén dependía de conocer su código interno, talla y color, un proceso
+    lento y propenso a errores. Con las estanterías etiquetadas y el Excel de ubicaciones siempre actualizado,
+    tienda podía pedir la mercancía directamente por su ubicación exacta, acortando el tiempo entre la llegada de
+    mercancía al almacén y su disponibilidad en tienda — una primera experiencia práctica en optimización de
+    flujos que después aplicaría a mayor escala en logística de distribución.
   </p>
 
   <div class="site-card">
