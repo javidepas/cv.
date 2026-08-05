@@ -103,7 +103,7 @@
 
   .stat-strip{
     max-width:1120px; margin:2.6rem auto 0; position:relative;
-    display:grid; grid-template-columns:repeat(4,1fr); gap:1px;
+    display:grid; grid-template-columns:repeat(5,1fr); gap:1px;
     background:rgba(255,255,255,.14);
     border:1px solid rgba(255,255,255,.14);
     border-radius:10px;
@@ -190,6 +190,36 @@
   .feature-card ul{ margin:1rem 0 0; padding-left:1.1rem; max-width:56ch; }
   .feature-card li{ margin-bottom:.5rem; font-size:.94rem; color:#DCE4EA; }
 
+  /* ---------- TOOL CARDS (Cash Fresh) ---------- */
+  .tool-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:1.1rem; margin-top:1.6rem; }
+  @media (max-width:780px){ .tool-grid{ grid-template-columns:1fr; } }
+  .tool-card{
+    background:#fff; border:1px solid var(--line); border-radius:12px;
+    padding:1.5rem 1.4rem; border-top:3px solid var(--amber);
+  }
+  .tool-card:nth-child(2){ border-top-color:var(--teal); }
+  .tool-card:nth-child(3){ border-top-color:var(--navy); }
+  .tool-card .tag{
+    font-family:'IBM Plex Mono',monospace; font-size:.7rem; text-transform:uppercase;
+    letter-spacing:.07em; color:var(--amber-dark); margin-bottom:.5rem; display:block;
+  }
+  .tool-card:nth-child(2) .tag{ color:var(--teal); }
+  .tool-card:nth-child(3) .tag{ color:var(--navy); }
+  .tool-card h4{ font-family:'Oswald',sans-serif; font-size:1.05rem; color:var(--navy); margin-bottom:.5rem; }
+  .tool-card p{ font-size:.88rem; color:var(--muted); line-height:1.55; margin:0; }
+  .tool-intro{ margin:2.2rem 0 0; font-size:.92rem; color:var(--muted); }
+
+  /* ---------- EXTRA INFO GRID ---------- */
+  .extra-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:1.1rem; }
+  @media (max-width:780px){ .extra-grid{ grid-template-columns:1fr; } }
+  .extra-item{ background:#fff; border:1px solid var(--line); border-radius:10px; padding:1.3rem 1.4rem; }
+  .extra-item .label{
+    font-family:'IBM Plex Mono',monospace; font-size:.72rem; text-transform:uppercase;
+    letter-spacing:.07em; color:var(--amber-dark); display:block; margin-bottom:.45rem;
+  }
+  .extra-item .value{ font-family:'Oswald',sans-serif; font-size:1.05rem; color:var(--navy); }
+  .extra-item .sub{ font-size:.85rem; color:var(--muted); margin-top:.3rem; }
+
   /* ---------- MEDIA / PHOTOS ---------- */
   .hero-banner{ position:relative; line-height:0; }
   .hero-banner img{ width:100%; display:block; max-height:440px; object-fit:cover; object-position:center 30%; }
@@ -275,6 +305,7 @@
     <div class="stat"><div class="num">80</div><div class="label">Empleados coordinados en toda la cadena</div></div>
     <div class="stat"><div class="num">8+</div><div class="label">Años en Grupo MAS</div></div>
     <div class="stat"><div class="num">1</div><div class="label">ERP propio desarrollado</div></div>
+    <div class="stat"><div class="num">6</div><div class="label">Rutas fijas gestionadas al día</div></div>
   </div>
 </header>
 
@@ -299,8 +330,9 @@
       Complementa esta base logística con más de <b>8 años en Grupo MAS (Cash Fresh)</b>, liderando el control de
       stock, la reducción de mermas y descuadres, y la digitalización de procesos operativos. Perfil analítico y
       orientado al dato, con formación en ADE (requisito de la posición), reforzada con un Máster en Big Data y BI,
-      un MBA y formación en programación full stack — incluyendo el desarrollo propio de un <b>ERP
-      (OptimusPlanner)</b> para logística, ventas y RRHH.
+      un MBA y formación en programación full stack — incluyendo el desarrollo propio de <b>OptimusPlanner</b>,
+      un ERP con módulos a medida según las necesidades de cada cliente, adaptable a cualquier sector y
+      desarrollado con inteligencia artificial.
     </p>
   </section>
 
@@ -321,13 +353,13 @@
         <ul>
           <li>Dirección de la logística de distribución nacional del grupo, con envíos de producto seco y congelado.</li>
           <li>Vinculación comercial y logística con grandes cadenas: Grupo MAS, y el grupo El Corte Inglés (Hipercor, Supercor y Opencor) en Granada, además de Supermercados Dani y Dia.</li>
-          <li>Coordinación de rutas fijas diarias de reparto combinada con viajes fuera de provincia no programados.</li>
+          <li>Coordinación de 6 rutas fijas diarias de reparto, además de rutas añadidas fuera de las habituales según la demanda, incluyendo desplazamientos fuera de provincia no programados.</li>
           <li>Gestión de la cadena de suministro completa: materia prima → semielaborado → producto final.</li>
           <li>Inventarios y contabilidad de gestión de costes del producto en todos sus niveles.</li>
           <li>Liderazgo de los equipos de reparto.</li>
           <li>Trato directo con una plantilla de 80 empleados de distintos sectores a lo largo de toda la cadena de suministro, desde fabricación hasta el punto de venta final: proveedores del sector primario, operarios de fábrica, repartidores y transportistas, y dependientes de panadería en los distintos puntos de gestión del producto, tanto en clientes externos como en puntos propios de la empresa.</li>
           <li>Funciones de Jefe de Producción: supervisión del stock y adaptación a la demanda de venta, elaboración de partes de producción, aprovisionamiento de materia prima y gestión del producto elaborado y semielaborado.</li>
-          <li>Aplicación de PRL (Prevención de Riesgos Laborales) y de medidas de control sanitario del producto y de los establecimientos, velando por el cumplimiento de la normativa de seguridad alimentaria e higiene en fábrica, almacén y puntos de venta.</li>
+          <li>Aplicación de PRL (Certificado Técnico Nivel A) y de medidas de control sanitario del producto y de los establecimientos, velando por el cumplimiento de la normativa de seguridad alimentaria e higiene en fábrica, almacén y puntos de venta.</li>
         </ul>
 
         <div class="media-row">
@@ -475,18 +507,38 @@
     <div class="sec-head"><span class="idx mono">03</span><h2>Desarrollo de software propio</h2></div>
     <div class="feature-card">
       <div style="flex:1 1 320px;">
-        <div class="badge">ERP propio</div>
+        <div class="badge">ERP modular con IA</div>
         <h3>OptimusPlanner</h3>
         <a class="url" href="https://optimusplanner.com" target="_blank" rel="noopener">optimusplanner.com</a>
         <ul>
-          <li>ERP propio, actualizable y editable (tipo SAP), para la gestión integrada de logística, ventas y RRHH.</li>
-          <li>Arquitectura modular construida con Python, SQL y Django, adaptable a distintas áreas de negocio.</li>
+          <li>ERP con distintos módulos desarrollados a petición del cliente según sus necesidades concretas, adaptable a cualquier sector de actividad.</li>
+          <li>Desarrollado con inteligencia artificial, sobre una arquitectura modular construida con Python, SQL y Django.</li>
           <li>Aplicación directa de la formación técnica a un caso de uso real de gestión empresarial — trasladable a la digitalización de una plataforma logística.</li>
         </ul>
         <a class="detail-link" href="experiencia-optimusplanner.html">Ver detalle del proyecto →</a>
       </div>
       <div style="flex:1 1 280px; border-radius:10px; overflow:hidden; align-self:stretch;">
         <img src="planificacion-rutas.jpeg" alt="Pantalla de planificación de rutas de reparto" style="width:100%; height:100%; object-fit:cover; display:block; min-height:220px;">
+      </div>
+    </div>
+
+    <p class="tool-intro">Además de OptimusPlanner, en Cash Fresh desarrolló tres herramientas propias para digitalizar la operativa diaria de la tienda:</p>
+
+    <div class="tool-grid">
+      <div class="tool-card">
+        <span class="tag">Control de caja</span>
+        <h4>Sistema digital de arqueos</h4>
+        <p>Digitaliza arqueos diarios, caja fuerte, gastos, préstamos e histórico de descuadres, sustituyendo el registro manual en papel por un control trazable y centralizado.</p>
+      </div>
+      <div class="tool-card">
+        <span class="tag">Mermas</span>
+        <h4>Cuadro de mando semanal</h4>
+        <p>Dashboard con KPIs, mapas de calor y ranking por departamento, construido a partir de la explotación de datos de 12 meses para detectar patrones y priorizar acciones.</p>
+      </div>
+      <div class="tool-card">
+        <span class="tag">Personal</span>
+        <h4>Planificador de vacaciones</h4>
+        <p>Herramienta de planificación de vacaciones y polivalencia de personal, para optimizar la cobertura de turnos y el dimensionamiento de la plantilla.</p>
       </div>
     </div>
   </section>
@@ -549,9 +601,31 @@
     </div>
   </section>
 
+  <!-- DATOS ADICIONALES -->
+  <section id="datos-adicionales">
+    <div class="sec-head"><span class="idx mono">07</span><h2>Datos adicionales</h2></div>
+    <div class="extra-grid">
+      <div class="extra-item">
+        <span class="label">Idiomas</span>
+        <div class="value">Inglés — Nivel B1</div>
+        <div class="sub">Sin certificar</div>
+      </div>
+      <div class="extra-item">
+        <span class="label">Carné y disponibilidad</span>
+        <div class="value">Carné de conducir tipo B</div>
+        <div class="sub">Disponibilidad total para viajar</div>
+      </div>
+      <div class="extra-item">
+        <span class="label">Certificación</span>
+        <div class="value">Certificado PRL</div>
+        <div class="sub">Técnico, Nivel A</div>
+      </div>
+    </div>
+  </section>
+
   <!-- HERRAMIENTAS -->
   <section id="herramientas">
-    <div class="sec-head"><span class="idx mono">07</span><h2>Herramientas y tecnología</h2></div>
+    <div class="sec-head"><span class="idx mono">08</span><h2>Herramientas y tecnología</h2></div>
     <div class="chip-group">
       <span class="chip">Excel avanzado</span>
       <span class="chip">Power BI</span>
